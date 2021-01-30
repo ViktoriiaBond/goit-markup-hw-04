@@ -110,7 +110,23 @@ body {
 /*-------------конец общие стили---------------*/
 
 /*-----------блок nav--------------------------*/
+.address-icons-mail{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: #757575;
+}
+.address-icons-phone{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #757575;
+}
 
+.auth-nav .link-header:hover .address-icon,
+.auth-nav .link-header:focus .address-icon {
+  fill: var(--accent-color);
+}
 .site-nav .link {
   color: var(--tittle-color);
   font-weight: 500;
@@ -138,7 +154,11 @@ body {
 .site-nav .link:active {
   color: var(--accent-color);
 }
-
+.link-header{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
 /*------------конец блок nav-----------------------*/
 
 /*-----------блок contacts footer--------------------*/
@@ -198,8 +218,20 @@ body {
 /*--------------блок hero-------------------------*/
 
 .hero {
-  text-align: center;
+  
   padding: 200px 15px;
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+  background-image: linear-gradient(to right , 
+  rgba(47, 48, 58, 0.4),rgba(0, 0, 0, 0.4)),
+  url(../images-studio/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-header {
   margin-top: 0px;
@@ -238,6 +270,7 @@ body {
 .about-company {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--main-background-color);
 }
 .company-features .desc {
   margin: 0px 0px;
@@ -265,6 +298,17 @@ body {
 .featur {
   width: 270px;
 }
+.about-company-icon{
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: 
+  var(--secondary-background-color);
+  
+}
+
 
 /*-----------конец блок компания------------------*/
 
@@ -322,7 +366,46 @@ body {
 
   background-color: var(--secondary-background-color);
 }
+.team-list{
+  background-color: var(--hero-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.icons {
+  width: 20px;
+  height: 20px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
+.social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--hero-color);
+  
+}
+.social-link-list:hover ,
+.social-link-list:focus {
+  background-color: var(--accent-color);
+  
+}
+.team-list .desc {
+  margin-bottom: 16px;
+}
+.icon-link-list {
+  fill: #afb1b8;
+}
+.social-link-list:hover .icon-link-list,
+.social-link-list:focus .icon-link-list {
+  
+  fill: var(--hero-color);
 /*------------конец блок команда------------------*/
 
 /*=======конец стили для файла index.html=========*/
