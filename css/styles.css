@@ -110,13 +110,13 @@ body {
 /*-------------конец общие стили---------------*/
 
 /*-----------блок nav--------------------------*/
-.address-icons-mail{
+.address-icons-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: #757575;
 }
-.address-icons-phone{
+.address-icons-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -154,7 +154,7 @@ body {
 .site-nav .link:active {
   color: var(--accent-color);
 }
-.link-header{
+.link-header {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -165,7 +165,9 @@ body {
 .address .web-logo {
   margin-bottom: 24px;
 }
-
+.address {
+  margin-right: 70px;
+}
 .auth-nav-footer .link {
   color: var(--contacts-color);
   font-style: normal;
@@ -211,6 +213,42 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.links--header {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  color: var(--hero-color);
+  text-transform: uppercase;
+}
+.social-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  width: 206px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.for-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icon-link-list-footer {
+  fill: var(--hero-color);
+}
 /*--------конец блок footer-----------------------*/
 
 /*=======стили для файла index.html===============*/
@@ -218,17 +256,19 @@ body {
 /*--------------блок hero-------------------------*/
 
 .hero {
-  
   padding: 200px 15px;
   max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  
-  background-image: linear-gradient(to right , 
-  rgba(47, 48, 58, 0.4),rgba(0, 0, 0, 0.4)),
-  url(../images-studio/hero.jpg);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images-studio/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -298,17 +338,14 @@ body {
 .featur {
   width: 270px;
 }
-.about-company-icon{
+.about-company-icon {
   width: 270px;
   height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
 
-  background-color: 
-  var(--secondary-background-color);
-  
+  background-color: var(--secondary-background-color);
 }
-
 
 /*-----------конец блок компания------------------*/
 
@@ -366,9 +403,10 @@ body {
 
   background-color: var(--secondary-background-color);
 }
-.team-list{
+.team-list {
   background-color: var(--hero-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 .icons {
@@ -380,7 +418,9 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
-
+.social-links .social-link:not(:last-child) {
+  margin-right: 10px;
+}
 .social-link-list {
   display: flex;
   justify-content: center;
@@ -388,13 +428,13 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--hero-color);
-  
 }
-.social-link-list:hover ,
+.for-team {
+  background-color: var(--hero-color);
+}
+.social-link-list:hover,
 .social-link-list:focus {
   background-color: var(--accent-color);
-  
 }
 .team-list .desc {
   margin-bottom: 16px;
@@ -404,9 +444,64 @@ body {
 }
 .social-link-list:hover .icon-link-list,
 .social-link-list:focus .icon-link-list {
-  
   fill: var(--hero-color);
+}
 /*------------конец блок команда------------------*/
+/*-------------блок клиенты------------------*/
+.clients .client-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--main-background-color);
+}
+.link-to-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+
+  background-color: var(--main-background-color);
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-icon-yago {
+  width: 44px;
+  height: 49px;
+}
+.client-icon-tag-here {
+  width: 40px;
+  height: 52px;
+}
+.client-icon-company {
+  width: 41px;
+  height: 42.6px;
+}
+.client-icon-foster {
+  width: 79.66px;
+  height: 42px;
+}
+.client-icon-brand {
+  width: 59px;
+  height: 47px;
+}
+.client-icon-tag-line {
+  width: 88.5px;
+  height: 45.45px;
+}
+/*-------------конец блок клиенты-------------*/
 
 /*=======конец стили для файла index.html=========*/
 
