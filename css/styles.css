@@ -480,26 +480,50 @@ body {
 .client-icon-yago {
   width: 44px;
   height: 49px;
+  fill: #afb1b8;
 }
 .client-icon-tag-here {
   width: 40px;
   height: 52px;
+  fill: #afb1b8;
 }
 .client-icon-company {
   width: 41px;
   height: 42.6px;
+  fill: #afb1b8;
 }
 .client-icon-foster {
   width: 79.66px;
   height: 42px;
+  fill: #afb1b8;
 }
 .client-icon-brand {
   width: 59px;
   height: 47px;
+  fill: #afb1b8;
 }
 .client-icon-tag-line {
   width: 88.5px;
   height: 45.45px;
+  fill: #afb1b8;
+}
+.link-to-client:hover,
+.link-to-client:focus {
+  border: 1px solid var(--accent-color);
+}
+.link-to-client:hover .client-icon-yago,
+.link-to-client:focus .client-icon-yago,
+.link-to-client:hover .client-icon-tag-here,
+.link-to-client:focus .client-icon-tag-here,
+.link-to-client:hover .client-icon-company,
+.link-to-client:focus .client-icon-company,
+.link-to-client:hover .client-icon-foster,
+.link-to-client:focus .client-icon-foster,
+.link-to-client:hover .client-icon-brand,
+.link-to-client:focus .client-icon-brand,
+.link-to-client:hover .client-icon-tag-line,
+.link-to-client:focus .client-icon-tag-line {
+  fill: var(--accent-color);
 }
 /*-------------конец блок клиенты-------------*/
 
