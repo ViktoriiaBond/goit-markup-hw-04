@@ -40,7 +40,7 @@ body {
 /*------------общие стили------------*/
 
 .web-logo {
-  display: block;
+  display: inline-block;
   margin-right: 50px;
   color: var(--accent-color);
   font-family: var(--logo-font);
