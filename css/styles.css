@@ -195,6 +195,8 @@ body {
 /*-----------блок contacts all-------------------*/
 .auth-nav .link:hover,
 .auth-nav .link:focus,
+.auth-nav-footer .link:hover,
+.auth-nav-footer .link:focus,
 .auth-nav .link-header:hover,
 .auth-nav .link-header:focus,
 .map:hover,
