@@ -537,7 +537,7 @@ body {
 
 .portfolio {
   padding: 94px 0px;
-  background: var(--main-background-color);
+  background-color: var(--main-background-color);
 }
 /*----------стили для галерея---------------------*/
 
